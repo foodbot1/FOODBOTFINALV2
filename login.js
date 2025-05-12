@@ -21,7 +21,8 @@ document.getElementById("loginBtn").addEventListener("click", async () => {
     const user = result.user;
 
     // ✅ Redireciona direto para o link de pagamento Stripe
-    window.location.href = `https://foodbot-webhook-production-efa4.up.railway.app/pagamento?uid=${user.uid}`;
+    window.location.href = `https://foodbot-backend.up.railway.app/pagamento?uid=${user.uid}`;
+
 
 
   } catch (error) {
